@@ -1,0 +1,7 @@
+
+
+
+javaS
+1) Ajustar sonido de entrada al video
+2) Al dejar de priorizar un video, pausarlo
+3)

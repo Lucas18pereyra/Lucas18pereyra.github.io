@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucas — Yo</title> 
+  <link rel="stylesheet" href="estilos.css" />
+
+  <style>
+
+  .foto-artista {
+  display: inline-block;
+  width: 150px;
+  margin: 8px;
+  vertical-align: top;
+  text-align: center;
+  position: relative; 
+  }
+
+  .foto-artista img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+
+  .foto-artista p {
+    font-size: 0.8rem;
+    margin-top: 4px;
+    height: 10px;
+  }
+
+  .foto-artista a {
+    text-decoration: none;
+  }
+
+  .video-preview {
+    display: none;
+    position:absolute;
+    top: 0;
+    left: 160px;
+    z-index: 999;
+    width: 896px;
+    background: #000;
+    border: 2px solid #ddd;
+  }
+
+  .video-preview-left {
+    display: none;
+    position:absolute;
+    top: 0;
+    left: 160px;
+    z-index: 999;
+    width: 896px;
+    background: #000;
+    border: 2px solid #ddd;
+  }
+
+  .video-preview-left {
+    left: auto;
+    right: 160px; 
+  }
+
+  .video-preview-left iframe {
+    width: 896px;
+    height: 504px;
+    border: none;
+  }
+
+  .video-preview iframe {
+    width: 896px;
+    height: 504px;
+    border: none;
+  }
+
+  .foto-juego {
+    display: inline-block;
+    width: 150px;
+    margin: 8px;
+    vertical-align: top;
+    text-align: center;
+  }
+
+  .foto-juego img {
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+  .foto-juego p {
+    height: 10px;
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+
+  .galeria {
+    text-align: center;
+  }
+
+</style>
+
+</head>
+
+<script>
+function toggleVideo(element) {
+
+  const video =
+  element.parentElement.querySelector('.video-preview , .video-preview-left');
+
+  if (video.style.display === 'block') {
+    video.style.display = 'none';
+  } else {
+    video.style.display = 'block';
+  }
+
+}
+</script>
+
+<body>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+  </nav>
+
+  <section>
+
+    <a href="index.html" class="volver">Volver</a>
+
+    <h1> <strong> lukitas </strong> </h1>
+
+    <p>
+      Un poco de <strong>Lukitas</strong>
+    </p>
+
+    <h2>Sus gustos</h2>
+  <h3>Música</h3>
+  
+
+<div class="galeria">
+
+  <div class="foto-artista">
+    <img src="yo imagenes/artista/8raPHigqH1CmabLuVLWOB3owVEjlPHdJuC5JZw21Kyi12jtAUpO3XxgPjW8U1euM.webp" alt="C.R.O"
+      onclick="toggleVideo(this)"
+      style="cursor: pointer;" />
+    <p><strong><a href="https://www.youtube.com/channel/UC20cm05g3-UFwiPDc1QaClQ" target="_blank">C.R.O</a></strong></p>
+    <p class="genero">Rap, Trap, Rock, Pop, Reguetón</p>
+    <div class="video-preview">
+      <iframe src="https://www.youtube.com/embed/tronbFXg2xA?autoplay=1&mute=1&start=80" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="foto-artista">
+    <img src="yo imagenes/artista/pablito.avif" alt="Pablito chill-E"
+    onclick="toggleVideo(this)"
+    style="cursor: pointer;" />
+    <p><strong><a href="https://www.youtube.com/@PABLOCHILL-EOFICIAL" target="_blank">Pablito Chill-E</a></strong></p>
+    <p class="genero">Trap Latino, Plugg, Reggaetón</p>
+    <div class="video-preview">
+      <iframe src="https://www.youtube.com/embed/_PxiQoZmSjw?autoplay=1&mute=1&start=72" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="foto-artista">
+    <img src="yo imagenes/artista/yanblock.jpeg" alt="Yan Block"
+    onclick="toggleVideo(this)"
+    style="cursor: pointer;" />
+    <p><strong><a href="https://www.youtube.com/@YanBlock" target="_blank">Yan Block</a></strong></p>
+    <p class="genero">Trap, R&B, Reggaetón</p>
+    <div class="video-preview">
+      <iframe src="https://www.youtube.com/embed/g98WszPl8dQ?autoplay=1&mute=1&start=15" allowfullscreen></iframe>
+    </div>
+  </div>
+  
+  <div class="foto-artista">
+    <img src="yo imagenes/artista/bad.jpg" alt="Bad Bunny"
+    onclick="toggleVideo(this)"
+    style="cursor: pointer;" 
+    />
+    <p><strong><a href="https://www.youtube.com/@BadBunnyPR" target="_blank">Bad Bunny</a></strong></p>
+    <p class="genero">Pop, R&B, Bachata, Salsa, Dembow, Rock</p>
+    <div class="video-preview-left">
+    <iframe
+      src="https://www.youtube.com/embed/ws00k_lIQ9U?autoplay=1&mute=1&rel=0" allowfullscreen>
+    </iframe>    
+  </div>
+
+  </div>
+
+  <div class="foto-artista">
+    <img src="yo imagenes/artista/MYKEab676161000051748372345609bebaf1e948ef7f.jpg" alt="Myke Towers"
+    onclick="toggleVideo(this)"
+    style="cursor: pointer;" 
+    />
+    <p><strong><a href="https://www.youtube.com/@BadBunnyPR" target="_blank">Myke Towers</a></strong></p>
+    <p class="genero">Trap, Reguetón, Hip Hop</p>
+    <div class="video-preview-left">
+    <iframe
+      src="https://www.youtube.com/embed/SzA3zxg3WMQ?autoplay=1&mute=1&rel=0" allowfullscreen>
+    </iframe>    
+  </div>
+
+</div>
+
+  <h3>Juegos favoritos</h3>
+
+<div class="galeria">
+
+  <div class="foto-juego">
+    <img src="yo imagenes/juegos/minecraft.d3792486-cf98-40c0-a2c1-d6443f0e2b70" alt="Minecraft" />
+    <p><strong>Minecraft</strong></p>
+    <p> Mundo abierto, Sandbox y Supervivencia</p>
+  </div>
+
+  <div class="foto-juego">
+    <img src="/yo imagenes/juegos/rocket.avif" alt="Rocket League" />
+    <p><strong>Rocket League</strong></p>
+    <p>Deportes y Conducción</p>
+  </div>
+
+  <div class="foto-juego">
+    <img src="yo imagenes/juegos/GOW.jpg" alt="God Of War" />
+    <p><strong>Saga God Of War</strong></p>
+    <p>Acción y Aventura</p>
+  </div>
+
+    <div class="foto-juego">
+    <img src="yo imagenes/juegos/MK1_portada.webp" alt="Mortal Kombat 1" />
+    <p><strong>Saga Mortal Kombat</strong></p>
+    <p>Pelea, Accion y Aventura</p>
+  </div>
+
+  <div class="foto-juego">
+    <img src="yo imagenes/juegos/cod.jpg" alt="Call of duty mw2" />
+    <p><strong>Saga Call of Duty </strong></p>
+    <p>Guerra, Battle Royale, Zombis, Cooperativo, Accion y Aventura</p>
+  </div>
+
+  <div class="foto-juego">
+    <img src="yo imagenes/juegos/lol.caf661a7-e0b3-492d-b91b-63627e47283e" alt="League of Legends" />
+    <p><strong>League of Legends</strong></p>
+    <p>MOBA</p>
+  </div>
+
+
+
+</div>
+
+</section>
+
+<section>
+  <h2>Mi personalidad</h2>
+
+  <h3>Frases mías</h3>
+  <p>"..."</p>
+
+  <h3>Cosas que me representan</h3>
+  <p>...</p>
+</section>
+
+<section>
+  <h2>Mis metas</h2>
+  <p>...</p>
+</section>
+
+<section>
+  <h2>Momentos random</h2>
+
+  <h3>Anécdota 1</h3>
+  <p>...</p>
+</section>
+
+  <footer>
+    <p>©2026 <b>Lukitas</b></p>
+  </footer>
+
+</body>
+</html>
