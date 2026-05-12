@@ -8,6 +8,10 @@
 
   <style>
 
+  h3 {
+    text-align: left;
+  }
+
   .foto-artista {
   display: inline-block;
   width: 150px;
@@ -24,7 +28,6 @@
     object-fit: cover;
     border: 1px solid #ddd;
   }
-
 
   .foto-artista p {
     font-size: 0.8rem;
@@ -77,16 +80,14 @@
 
   .foto-juego {
     display: inline-block;
-    width: 150px;
+    width: 146px;
     margin: 8px;
     vertical-align: top;
-    text-align: center;
   }
 
   .foto-juego img {
     width: 150px;
     height: 200px;
-    text-align: center;
     object-fit: cover;
     border: 1px solid #ddd;
   }
@@ -101,7 +102,56 @@
     text-align: center;
   }
 
-</style>
+  .foto-yt {
+    display: flex;
+    flex-direction: row;
+    background-color: #ededed;
+    border-radius: 15px;
+    padding: 22px;
+    gap: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all ease-in-out 0.1s;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    margin: 20px;
+  }
+
+  .foto-yt:hover {
+    transform: scale(1.03);
+  }
+
+  .foto-yt img {
+    border-radius: 15%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+  .foto-info p {
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .foto-info {
+    display: flex;
+    flex-direction: column ;
+    color: #000;
+    margin-bottom: 25px ;
+
+  }
+
+  .foto-info h2 {
+    color: #0066cc;
+    font-size: 34px;
+    text-align: left;
+    margin: 0px;
+    
+  }
+
+
+  </style>
 
 </head>
 
@@ -203,48 +253,123 @@ function toggleVideo(element) {
     </iframe>    
   </div>
 
-</div>
+  </div>
 
-  <h3>Juegos favoritos</h3>
+<h3>Juegos favoritos</h3>
 
 <div class="galeria">
 
   <div class="foto-juego">
-    <img src="yo imagenes/juegos/minecraft.d3792486-cf98-40c0-a2c1-d6443f0e2b70" alt="Minecraft" />
-    <p><strong>Minecraft</strong></p>
-    <p> Mundo abierto, Sandbox y Supervivencia</p>
+    <a href="https://www.minecraft.net/es-es" target="_blank">
+      <img src="yo imagenes/juegos/minecraft.d3792486-cf98-40c0-a2c1-d6443f0e2b70" alt="Minecraft" />
+    </a>
+    <div>
+      <p><strong>Minecraft</strong></p>
+      <p> Mundo abierto, Sandbox y Supervivencia</p>
+    </div>
+
   </div>
 
   <div class="foto-juego">
-    <img src="/yo imagenes/juegos/rocket.avif" alt="Rocket League" />
-    <p><strong>Rocket League</strong></p>
-    <p>Deportes y Conducción</p>
+    <a href="https://www.rocketleague.com/es-es/" target="_blank">
+      <img src="/yo imagenes/juegos/rocket.avif" alt="Rocket League" />
+    </a>
+    <div>
+      <p><strong>Rocket League</strong></p>
+      <p>Deportes y Conducción</p>
+    </div>
+    
   </div>
 
   <div class="foto-juego">
-    <img src="yo imagenes/juegos/GOW.jpg" alt="God Of War" />
-    <p><strong>Saga God Of War</strong></p>
-    <p>Acción y Aventura</p>
+    <a href="https://www.playstation.com/es-ar/games/god-of-war-ragnarok/" target="_blank" >
+      <img src="yo imagenes/juegos/GOW.jpg" alt="God Of War" />
+    </a>
+    <div>
+      <p><strong>Saga God Of War</strong></p>
+      <p>Acción y Aventura</p>
+    </div>
+
   </div>
 
     <div class="foto-juego">
-    <img src="yo imagenes/juegos/MK1_portada.webp" alt="Mortal Kombat 1" />
-    <p><strong>Saga Mortal Kombat</strong></p>
-    <p>Pelea, Accion y Aventura</p>
+    <a href="https://www.mortalkombat.com/es-es" target="_blank">
+      <img src="yo imagenes/juegos/MK1_portada.webp" alt="Mortal Kombat 1" />
+    </a>
+    <div>
+      <p><strong>Saga Mortal Kombat</strong></p>
+      <p>Pelea, Accion y Aventura</p>
+    </div>
+
   </div>
 
   <div class="foto-juego">
-    <img src="yo imagenes/juegos/cod.jpg" alt="Call of duty mw2" />
-    <p><strong>Saga Call of Duty </strong></p>
-    <p>Guerra, Battle Royale, Zombis, Cooperativo, Accion y Aventura</p>
+    <a href="https://www.callofduty.com/es" target="_blank">
+      <img src="yo imagenes/juegos/cod.jpg" alt="Call of duty mw2" />
+    </a>
+    <div>
+      <p><strong>Saga Call of Duty </strong></p>
+      <p>Guerra, Battle Royale, Zombis, Cooperativo, Accion y Aventura</p>
+    </div>
+
   </div>
 
   <div class="foto-juego">
-    <img src="yo imagenes/juegos/lol.caf661a7-e0b3-492d-b91b-63627e47283e" alt="League of Legends" />
-    <p><strong>League of Legends</strong></p>
-    <p>MOBA</p>
+    <a href="https://www.leagueoflegends.com/es-es/" target="_blank">
+      <img src="yo imagenes/juegos/lol.caf661a7-e0b3-492d-b91b-63627e47283e" alt="League of Legends" />
+    </a>
+    <div>
+      <p><strong>League of Legends</strong></p>
+      <p>MOBA</p>
+    </div>
+  </div>
+  
+  <h3>Contenido que consume</h3>
+
+  <div class="foto-yt">
+    <a href="https://www.youtube.com/@YANPOL" target="_blank">
+      <img src="yo imagenes/youtubers/YANPOL.jpg" alt="Yanpol">
+    </a>
+    <div class="foto-info">
+      <h2> YANPOL </h2>
+      <p>YANPOL (Juan Pablo Fuentes) es un reconocido youtuber mexicano especializado en tecnología, enfocado en PC gaming, hardware, comparativas de componentes y armado de setups.</p>
+      <p>Categorias: Tecnología, Hardware y Gaming </p>
+    </div>
   </div>
 
+  <div class="foto-yt">
+    <a href="https://www.youtube.com/@soydalto" target="_blank">
+      <img src="yo imagenes/youtubers/dalto.jpg" alt="Lucas Dalto">
+    </a>
+    <div class="foto-info">
+      <h2>Soy Dalto</h2>
+      <p>Lucas Dalto es un influyente programador, desarrollador web y "edutuber" argentino, reconocido principalmente por su canal de YouTube Soy Dalto, donde ofrece cursos gratuitos de programación que han alcanzado a millones de personas.</p>
+      <p>Categorias: Educador Digital, Emprendedor Tecnológico, Desarrollador Web y Programador</p>
+    </div>
+  </div>
+
+  <div class="foto-yt">
+    <a href="https://www.youtube.com/@Tomex." target="_blank">
+      <img src="yo imagenes/youtubers/tomex.jpg" alt="Tomex">
+    </a>
+    <div class="foto-info">
+      <h2>Tomex</h2>
+      <p>Tomex (Tomas Chiappero Pons) es un reconocido youtuber argentino especializado en tecnología, hardware y gaming. Su contenido se centra en hacer que el mundo de la computación sea accesible y entretenido para todo el público.</p>
+      <p>Categorias: Tecnología, Hardware y Gaming</p>
+    </div>
+  </div>
+
+  <div class="foto-yt">
+    <a href="https://www.youtube.com/@DrossRotzank." target="_blank">
+      <img src="yo imagenes/youtubers/dross.jpg" alt="DrossRotzank">
+    </a>
+    <div class="foto-info">
+      <h2>DrossRotzank</h2>
+      <p> Ángel David Revilla Lenoci, Es reconocido como uno de los creadores de contenido más relevantes del mundo de habla hispana, pionero en el género de terror, misterio y fenómenos paranormales. Su canal principal, DrossRotzank, cuenta con más de 24 millones de suscriptores y es considerado el espacio más grande dedicado a conspiraciones y horror en la plataforma</p>
+      <p>Categorias: Terror y Misterio, Terror y Misterio</p>
+    </div>
+  </div>
+  
 
 
 </div>
@@ -252,7 +377,7 @@ function toggleVideo(element) {
 </section>
 
 <section>
-  <h2>Mi personalidad</h2>
+  <h2>Su personalidad</h2>
 
   <h3>Frases mías</h3>
   <p>"..."</p>
