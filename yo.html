@@ -6,160 +6,13 @@
   <title>Lucas — Yo</title> 
   <link rel="stylesheet" href="estilos.css" />
 
-  <style>
-
-  h3 {
-    text-align: left;
-  }
-
-  .foto-artista {
-  display: inline-block;
-  width: 150px;
-  margin: 8px;
-  vertical-align: top;
-  text-align: center;
-  position: relative; 
-  }
-
-  .foto-artista img {
-    width: 150px;
-    height: 150px;
-    text-align: center;
-    object-fit: cover;
-    border: 1px solid #ddd;
-  }
-
-  .foto-artista p {
-    font-size: 0.8rem;
-    margin-top: 4px;
-    height: 10px;
-  }
-
-  .foto-artista a {
-    text-decoration: none;
-  }
-
-  .video-preview {
-    display: none;
-    position:absolute;
-    top: 0;
-    left: 160px;
-    z-index: 999;
-    width: 896px;
-    background: #000;
-    border: 2px solid #ddd;
-  }
-
-  .video-preview-left {
-    display: none;
-    position:absolute;
-    top: 0;
-    left: 160px;
-    z-index: 999;
-    width: 896px;
-    background: #000;
-    border: 2px solid #ddd;
-  }
-
-  .video-preview-left {
-    left: auto;
-    right: 160px; 
-  }
-
-  .video-preview-left iframe {
-    width: 896px;
-    height: 504px;
-    border: none;
-  }
-
-  .video-preview iframe {
-    width: 896px;
-    height: 504px;
-    border: none;
-  }
-
-  .foto-juego {
-    display: inline-block;
-    width: 146px;
-    margin: 8px;
-    vertical-align: top;
-  }
-
-  .foto-juego img {
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    border: 1px solid #ddd;
-  }
-
-  .foto-juego p {
-    height: 10px;
-    font-size: 0.8rem;
-    margin-top: 4px;
-  }
-
-  .galeria {
-    text-align: center;
-  }
-
-  .foto-yt {
-    display: flex;
-    flex-direction: row;
-    background-color: #ededed;
-    border-radius: 15px;
-    padding: 22px;
-    gap: 15px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all ease-in-out 0.1s;
-    align-items: center;
-    justify-content: center;
-    height: 250px;
-    margin: 20px;
-  }
-
-  .foto-yt:hover {
-    transform: scale(1.03);
-  }
-
-  .foto-yt img {
-    border-radius: 15%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border: 1px solid #ddd;
-  }
-
-  .foto-info p {
-    text-align: left;
-    margin-top: 10px;
-  }
-
-  .foto-info {
-    display: flex;
-    flex-direction: column ;
-    color: #000;
-    margin-bottom: 25px ;
-
-  }
-
-  .foto-info h2 {
-    color: #0066cc;
-    font-size: 34px;
-    text-align: left;
-    margin: 0px;
-    
-  }
-
-
-  </style>
-
 </head>
 
 <script>
-function toggleVideo(element) {
+  function toggleVideo(element) {
 
   const video =
-  element.parentElement.querySelector('.video-preview , .video-preview-left');
+  element.parentElement.querySelector('.video-preview , .video-preview-left, .video-preview-center');
 
   if (video.style.display === 'block') {
     video.style.display = 'none';
@@ -170,13 +23,32 @@ function toggleVideo(element) {
 }
 </script>
 
+<style>
+  body {
+    background-image: url("/Lucas18pereyra.github.io/FONDO/1.png");
+    background-size:cover  ; /* cover */
+    background-position:center ;
+    background-attachment:fixed ;
+    background-repeat: no-repeat; /* repeat-x,repeat-y */
+  }
+
+  h3 {
+    text-align: left;
+  }
+
+  .galeria {
+    text-align: center;
+  }
+
+  </style>
+
 <body>
 
   <nav>
     <a href="index.html">Inicio</a>
   </nav>
 
-  <section>
+<section>
 
     <a href="index.html" class="volver">Volver</a>
 
@@ -187,9 +59,8 @@ function toggleVideo(element) {
     </p>
 
     <h2>Sus gustos</h2>
-  <h3>Música</h3>
-  
 
+<h3>Música</h3>
 <div class="galeria">
 
   <div class="foto-artista">
@@ -198,6 +69,7 @@ function toggleVideo(element) {
       style="cursor: pointer;" />
     <p><strong><a href="https://www.youtube.com/channel/UC20cm05g3-UFwiPDc1QaClQ" target="_blank">C.R.O</a></strong></p>
     <p class="genero">Rap, Trap, Rock, Pop, Reguetón</p>
+
     <div class="video-preview">
       <iframe src="https://www.youtube.com/embed/tronbFXg2xA?autoplay=1&mute=1&start=80" allowfullscreen></iframe>
     </div>
@@ -220,7 +92,8 @@ function toggleVideo(element) {
     style="cursor: pointer;" />
     <p><strong><a href="https://www.youtube.com/@YanBlock" target="_blank">Yan Block</a></strong></p>
     <p class="genero">Trap, R&B, Reggaetón</p>
-    <div class="video-preview">
+
+    <div class="video-preview-center">
       <iframe src="https://www.youtube.com/embed/g98WszPl8dQ?autoplay=1&mute=1&start=15" allowfullscreen></iframe>
     </div>
   </div>
@@ -234,7 +107,7 @@ function toggleVideo(element) {
     <p class="genero">Pop, R&B, Bachata, Salsa, Dembow, Rock</p>
     <div class="video-preview-left">
     <iframe
-      src="https://www.youtube.com/embed/ws00k_lIQ9U?autoplay=1&mute=1&rel=0" allowfullscreen>
+      src="https://www.youtube.com/embed/ws00k_lIQ9U?autoplay=1&mute=1&start=24" allowfullscreen>
     </iframe>    
   </div>
 
@@ -249,14 +122,14 @@ function toggleVideo(element) {
     <p class="genero">Trap, Reguetón, Hip Hop</p>
     <div class="video-preview-left">
     <iframe
-      src="https://www.youtube.com/embed/SzA3zxg3WMQ?autoplay=1&mute=1&rel=0" allowfullscreen>
+      src="https://www.youtube.com/embed/SzA3zxg3WMQ?autoplay=1&mute=1&start=11" allowfullscreen>
     </iframe>    
   </div>
 
   </div>
+</div>
 
 <h3>Juegos favoritos</h3>
-
 <div class="galeria">
 
   <div class="foto-juego">
@@ -272,7 +145,7 @@ function toggleVideo(element) {
 
   <div class="foto-juego">
     <a href="https://www.rocketleague.com/es-es/" target="_blank">
-      <img src="/yo imagenes/juegos/rocket.avif" alt="Rocket League" />
+      <img src="yo imagenes/juegos/rocket.avif" alt="Rocket League" />
     </a>
     <div>
       <p><strong>Rocket League</strong></p>
@@ -323,8 +196,10 @@ function toggleVideo(element) {
       <p>MOBA</p>
     </div>
   </div>
-  
-  <h3>Contenido que consume</h3>
+</div>
+
+<h3>Contenido que consume</h3>
+<div>
 
   <div class="foto-yt">
     <a href="https://www.youtube.com/@YANPOL" target="_blank">
@@ -332,7 +207,8 @@ function toggleVideo(element) {
     </a>
     <div class="foto-info">
       <h2> YANPOL </h2>
-      <p>YANPOL (Juan Pablo Fuentes) es un reconocido youtuber mexicano especializado en tecnología, enfocado en PC gaming, hardware, comparativas de componentes y armado de setups.</p>
+      <p>YANPOL (Juan Pablo Fuentes) es un reconocido youtuber mexicano especializado en tecnología, enfocado en PC
+         gaming, hardware, comparativas de componentes y armado de setups.</p>
       <p>Categorias: Tecnología, Hardware y Gaming </p>
     </div>
   </div>
@@ -343,7 +219,8 @@ function toggleVideo(element) {
     </a>
     <div class="foto-info">
       <h2>Soy Dalto</h2>
-      <p>Lucas Dalto es un influyente programador, desarrollador web y "edutuber" argentino, reconocido principalmente por su canal de YouTube Soy Dalto, donde ofrece cursos gratuitos de programación que han alcanzado a millones de personas.</p>
+      <p>Lucas Dalto es un influyente programador, desarrollador web y "edutuber" argentino, reconocido principalmente por su
+         canal de YouTube Soy Dalto, donde ofrece cursos gratuitos de programación donde alcanzó a millones de personas.</p>
       <p>Categorias: Educador Digital, Emprendedor Tecnológico, Desarrollador Web y Programador</p>
     </div>
   </div>
@@ -354,41 +231,34 @@ function toggleVideo(element) {
     </a>
     <div class="foto-info">
       <h2>Tomex</h2>
-      <p>Tomex (Tomas Chiappero Pons) es un reconocido youtuber argentino especializado en tecnología, hardware y gaming. Su contenido se centra en hacer que el mundo de la computación sea accesible y entretenido para todo el público.</p>
+      <p>Tomex (Tomas Chiappero Pons) es un reconocido youtuber argentino especializado en tecnología, hardware y gaming.
+         Su contenido se centra en hacer que el mundo de la computación sea accesible y entretenido para todo el público.</p>
       <p>Categorias: Tecnología, Hardware y Gaming</p>
     </div>
   </div>
 
   <div class="foto-yt">
-    <a href="https://www.youtube.com/@DrossRotzank." target="_blank">
+    <a href="https://www.youtube.com/@DrossRotzank" target="_blank">
       <img src="yo imagenes/youtubers/dross.jpg" alt="DrossRotzank">
     </a>
     <div class="foto-info">
       <h2>DrossRotzank</h2>
-      <p> Ángel David Revilla Lenoci, Es reconocido como uno de los creadores de contenido más relevantes del mundo de habla hispana, pionero en el género de terror, misterio y fenómenos paranormales. Su canal principal, DrossRotzank, cuenta con más de 24 millones de suscriptores y es considerado el espacio más grande dedicado a conspiraciones y horror en la plataforma</p>
+      <p> Ángel David Revilla Lenoci, Es uno de los creadores de contenido más relevantes del mundo, pionero en
+         terror, misterio y fenómenos paranormales. Su canal contiene más de 24 millones de suscriptores y es
+          considerado el más grande dedicado a conspiraciones y horror en la plataforma</p>
       <p>Categorias: Terror y Misterio, Terror y Misterio</p>
     </div>
   </div>
-  
-
-
 </div>
 
 </section>
 
 <section>
-  <h2>Su personalidad</h2>
+<h2>Sus metas</h2>
+  <h3>Empresa de Desarrollo de Software</h3>
+  <div class="metas">
 
-  <h3>Frases mías</h3>
-  <p>"..."</p>
-
-  <h3>Cosas que me representan</h3>
-  <p>...</p>
-</section>
-
-<section>
-  <h2>Mis metas</h2>
-  <p>...</p>
+  </div>
 </section>
 
 <section>
@@ -403,4 +273,5 @@ function toggleVideo(element) {
   </footer>
 
 </body>
+
 </html>

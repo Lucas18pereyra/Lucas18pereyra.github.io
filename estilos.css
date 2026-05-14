@@ -142,7 +142,6 @@ footer {
 
 .descripcion-usuario {
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400;
   height: 70px;
   line-height: 21px;
 }
@@ -151,4 +150,161 @@ b {
   color: #0066cc;
 } 
 
+  .foto-artista {
+  display: inline-block;
+  width: 150px;
+  margin: 8px;
+  vertical-align: top;
+  text-align: center;
+  position: relative; 
+  }
 
+  .foto-artista img {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+  .foto-artista p {
+    font-size: 0.8rem;
+    margin-top: 4px;
+    height: 10px;
+  }
+
+  .foto-artista a {
+    text-decoration: none;
+  }
+
+  .video-preview {
+    display: none;
+    position:absolute;
+    top: 0;
+    left: 160px;
+    z-index: 999;
+    width: 896px;
+    background: #000;
+    border: 2px solid #ddd;
+  }
+
+  .video-preview-left {
+    display: none;
+    position:absolute;
+    top: 0;
+    left: auto;
+    right: 160px;
+    z-index: 999;
+    width: 896px;
+    background: #000;
+    border: 2px solid #ddd;
+ 
+  }
+
+  .video-preview-center {
+    display: none;
+    position:absolute;
+    top: 220px;
+    left: -370px;
+    right: -400px;
+    z-index: 999;
+    width: 896px;
+    height: 504px; 
+    background: #000;
+    border: 2px solid #ddd;
+  }
+
+   .video-preview iframe {
+    width: 896px;
+    height: 504px;
+    border: none;
+  }
+
+  .video-preview-left iframe {
+    width: 896px;
+    height: 504px;
+    border: none;
+  }
+
+  .video-preview-center iframe {
+    width: 896px;
+    height: 504px;
+    border: none;
+  }
+
+  .foto-juego {
+    display: inline-block;
+    width: 146px;
+    margin: 8px;
+    vertical-align: top;
+    transition: all ease-in-out 0.2s;
+  }
+
+  .foto-juego:hover {
+    transform: scale(1.2)
+  }
+
+  .foto-juego img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+  .foto-juego p {
+    height: 10px;
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+
+  .foto-yt {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: #ededed;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: rgba(36, 172, 241, 0.24) 4px 10px 15px; /* el tercero el blur */
+    transition: all ease-in-out 0.2s;
+  }
+
+  .foto-yt:hover {
+    transform: scale(1.1);
+  }
+
+  .foto-yt img {
+      border-radius: 15%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      flex-shrink: 0;
+    }
+
+  .foto-info {
+    display: flex;
+    flex-direction: column ;
+    color: #000;
+    justify-content: flex-start;
+  }
+  
+   .foto-info h2 {
+    color: #0066cc;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+    .foto-info p {
+    font-size: 15px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    
+  }
